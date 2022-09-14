@@ -14,9 +14,9 @@ import org.springframework.boot.SpringApplication;
                   SpringApplication.run(DemoApplication.class, args);
                   }
                   
-                  @GetMapping("/hi")
-                  public String hi(@RequestParam(value = "name", defaultValue = "World") String name) {
-                  return String.format("Hi %s!", name);
+                  @GetMapping("/hello")
+                  public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+                  return String.format("Hello %s!", name);
                   }
                 
               }
